@@ -1,6 +1,3 @@
 FROM ubuntu:latest
-RUN apt-get update 
-RUN apt-get install -y \
-    curl \
-    nginx
-CMD ["pwd"]
+WORKDIR /sample_folder
+RUN touch sample_file
